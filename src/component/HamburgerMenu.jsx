@@ -2,15 +2,10 @@ import { useState } from "react";
 import { RxHalf1, RxHamburgerMenu } from "react-icons/rx";
 import { IoMdClose } from "react-icons/io";
 import Menu from "./Menu";
+import Socials from "./Socials";
 
 function HamburgerMenu() {
   const [open, setOpen] = useState(false);
-
-  const menuItem = [
-    { id: 1, label: "About", link: "/about" },
-    { id: 2, label: "Portfolio", link: "/Porfolio" },
-    { id: 3, label: "Blogs", link: "/blog" },
-  ];
 
   const toggleMenu = () => {
     setOpen(!open);
@@ -23,7 +18,26 @@ function HamburgerMenu() {
         {open ? <IoMdClose /> : <RxHamburgerMenu />}
       </div>
       <div>
-        {open && <Menu menuItem={menuItem} /> }
+        {open && (
+          <div className="">
+            <ul className="">
+              <a href="">
+                <li>About</li>
+              </a>
+
+              <a href="">
+                <li>Portfolio</li>
+              </a>
+
+              <a href="">
+                <li>Blogs</li>
+              </a>
+            </ul>
+            <div>
+              <Socials />
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
