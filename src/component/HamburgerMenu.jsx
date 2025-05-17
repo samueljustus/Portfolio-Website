@@ -2,7 +2,7 @@ import { useState } from "react";
 import { RxHalf1, RxHamburgerMenu } from "react-icons/rx";
 import { IoMdClose } from "react-icons/io";
 import Menu from "./Menu";
-import Socials from "./Socials";
+
 
 function HamburgerMenu() {
   const [open, setOpen] = useState(false);
@@ -18,26 +18,7 @@ function HamburgerMenu() {
         {open ? <IoMdClose /> : <RxHamburgerMenu />}
       </div>
       <div>
-        {open && (
-          <div className="">
-            <ul className="">
-              <a href="">
-                <li>About</li>
-              </a>
-
-              <a href="">
-                <li>Portfolio</li>
-              </a>
-
-              <a href="">
-                <li>Blogs</li>
-              </a>
-            </ul>
-            <div>
-              <Socials />
-            </div>
-          </div>
-        )}
+        {open && <Menu />}
       </div>
     </div>
   );

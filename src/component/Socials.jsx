@@ -2,7 +2,7 @@ import { FaLinkedin, FaMedium, FaGithub } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
 function Socials() {
   return (
-    <div className="flex gap-4">
+    <div className="flex gap-5 text-xl">
       <a href="" aria-label="GitHub">
         <FaGithub />
       </a>
