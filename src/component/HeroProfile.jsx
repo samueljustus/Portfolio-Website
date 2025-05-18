@@ -1,8 +1,10 @@
 import Socials from "./Socials";
 import profileImage from "../assets/profile.jpeg";
+import {motion} from 'motion/react'
+
 function HeroProfile() {
   return (
-    <div className="px-4">
+    <motion.div className="px-4">
       <div className="relative overflow-hidden border-4 border-gray-300 rounded-lg">
       
         <img
@@ -11,7 +13,7 @@ function HeroProfile() {
           className="block w-full rounded-lg"
         />
       </div>
-      <div className="mt-10">
+      <motion.div className="mt-10">
         <p>
           Hi My Name is{" "}
           {/* <span class="bg-gray-300 rounded-full px-7 py-4 w-20 h-20"></span> */}
@@ -21,8 +23,8 @@ function HeroProfile() {
           i'm a Software Developer and a Technical Writer based in Lagos, Nigeria
         </p>
         <Socials />
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }
 

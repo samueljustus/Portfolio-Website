@@ -11,7 +11,7 @@ const Menu = ({ closeMenu}) => {
 
 
   return (
-    <div className="w-screen h-screen fixed top-0 left-0 bg-blue-500 z-7 flex flex-col ">
+    <div className="w-screen h-screen fixed top-0 left-0 bg-[#F3F4F6] z-7 flex flex-col ">
       <ul className="absolute right-0 top-50 px-2 text-base">
         <Link to="/about" onClick={closeMenu}>
           <li>About</li>
