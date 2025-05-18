@@ -11,6 +11,10 @@ function HamburgerMenu() {
     setOpen(!open);
   };
 
+  const closeMenu = () => {
+    setOpen(false)
+  }
+
   return (
     <div className="flex justify-center item-center">
       <div>{/* <p className="text-[#8e4aec]">menu</p> */}</div>
@@ -18,7 +22,7 @@ function HamburgerMenu() {
         {open ? <IoMdClose /> : <RxHamburgerMenu />}
       </div>
       <div>
-        {open && <Menu />}
+        {open && <Menu closeMenu={closeMenu} />}
       </div>
     </div>
   );
