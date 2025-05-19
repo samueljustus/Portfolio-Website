@@ -2,7 +2,7 @@ import { useState } from "react";
 import { RxHalf1, RxHamburgerMenu } from "react-icons/rx";
 import { IoMdClose } from "react-icons/io";
 import Menu from "./Menu";
-
+import { AnimatePresence, motion } from "motion/react";
 
 function HamburgerMenu() {
   const [open, setOpen] = useState(false);
@@ -12,8 +12,8 @@ function HamburgerMenu() {
   };
 
   const closeMenu = () => {
-    setOpen(false)
-  }
+    setOpen(false);
+  };
 
   return (
     <div className="flex justify-center item-center">
@@ -22,7 +22,9 @@ function HamburgerMenu() {
         {open ? <IoMdClose /> : <RxHamburgerMenu />}
       </div>
       <div>
-        {open && <Menu closeMenu={closeMenu} />}
+        <AnimatePresence>
+          {open && <Menu closeMenu={closeMenu} />}
+        </AnimatePresence>
       </div>
     </div>
   );
