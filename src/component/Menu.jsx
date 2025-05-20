@@ -40,7 +40,7 @@ const Menu = ({ closeMenu }) => {
     },
   };
 
-  rgitconst listContainer = {
+  const listContainer = {
     closed: {},
 
     open: {
