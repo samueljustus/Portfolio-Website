@@ -27,7 +27,7 @@ function HeroProfile() {
   };
   return (
     <div className="px-4">
-      <div className="relative overflow-hidden border-4 border-gray-300 rounded-lg">
+      <div className="relative overflow-hidden border-4 border-gray-300 rounded-lg mt-20">
         <img
           src={profileImage}
           alt="profile picture of samuel justus"

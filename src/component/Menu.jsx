@@ -21,7 +21,7 @@ const Menu = ({ closeMenu }) => {
       transformOrigin: "top",
       y: 0,
       transition: {
-        duration: 0.7,
+        duration: 0.3,
         // when: "beforeChildren",
         staggerChildren: 0.1,
         staggerDirection: 1,
@@ -32,7 +32,7 @@ const Menu = ({ closeMenu }) => {
       scaleY: 0,
       transformOrigin: "top",
       transition: {
-        duration: 0.7,
+        duration: 0.3,
         // ease: "easeInOut",
         staggerChildren: 0.1,
         staggerDirection: -1,
@@ -54,19 +54,34 @@ const Menu = ({ closeMenu }) => {
 
     exit: {
       transition: {
-        staggerChildren: 0.1,
+        staggerChildren: 0.2,
         staggerDirection: -1,
       },
     },
   };
 
+  const fadeIn = {
+    hidden: { opacity: 0, y: 30, scale: 0.95 },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: 1,
+        duration: 0.5,
+        scale: 1,
+        ease: "easeOut",
+      },
+    },
+  };
+
   const itemVariants = {
-    closed: { opacity: 0, y: 20, scale: 0.95 },
+    closed: { opacity: 0, y: 40, scale: 0.95 },
     open: {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.2,
+        duration: 0.4,
+        ease: "easeInOut",
       },
     },
     exit: { opacity: 0, y: 30, transition: { duration: 0.3 } },
@@ -79,14 +94,14 @@ const Menu = ({ closeMenu }) => {
       animate="open"
       exit="exit"
       // style={{ transformOrigin: "top" }}
-      className="w-screen h-screen fixed top-0 left-0 bg-[#F3F4F6] z-7 flex flex-col"
+      className=" fixed inset-0 top-0 left-0 bg-[#E5E7EB] z-7 flex flex-col overflow-hidden"
     >
       <motion.ul
         variants={listContainer}
         initial="closed"
         animate="open"
         exit="exit"
-        className="absolute right-0 top-50 px-2 text-base"
+        className="absolute right-0 top-50 px-2 text-base font-bold"
       >
         <motion.li variants={itemVariants}>
           <MotionLink to="/about" className="block" onClick={closeMenu}>
@@ -110,9 +125,14 @@ const Menu = ({ closeMenu }) => {
           </MotionLink>
         </motion.li>
       </motion.ul>
-      <div className="absolute bottom-0 w-screen px-10 flex justify-center my-10 py-10 border-t border-black-300">
+      <motion.div
+        variants={fadeIn}
+        initial="hidden"
+        animate="show"
+        className="absolute bottom-0 w-screen flex justify-center my-10 py-10"
+      >
         <Socials />
-      </div>
+      </motion.div>
     </motion.div>
   );
 };

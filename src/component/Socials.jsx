@@ -1,7 +1,7 @@
 import { FaLinkedin, FaMedium, FaGithub } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
 import { motion, MotionConfig } from "motion/react";
-function Socials() {
+function Socials({}) {
 
   const fadeIn = {
     hidden: { opacity: 0, y: 30, scale: 0.95 },

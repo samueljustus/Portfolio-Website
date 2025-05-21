@@ -3,9 +3,11 @@ import HamburgerMenu from "./HamburgerMenu";
 function NavBar() {
   return (
     <div>
-      <div className=" flex item-center justify-between my-6 text-xs z-10 px-4">
-        <Logo />
-        <HamburgerMenu />
+      <div className="fixed top-0 left-0 w-full bg-[#ffff] py-6 text-xs z-10 px-4 shadow-xl">
+        <div className="max-w-[1000px] flex item-center justify-between m-auto">
+          <Logo />
+          <HamburgerMenu />
+        </div>
       </div>
     </div>
   );
