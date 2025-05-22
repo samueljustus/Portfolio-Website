@@ -102,8 +102,8 @@ const Menu = ({ closeMenu }) => {
       <motion.div
         initial={{
           height: 0,
-          borderBottomLeftRadius: "2rem",
-          borderBottomRightRadius: "2rem",
+          borderBottomLeftRadius: "1rem",
+          borderBottomRightRadius: "1rem",
         }}
         animate={{
           height: "100%",
@@ -116,8 +116,8 @@ const Menu = ({ closeMenu }) => {
         }}
         exit={{
           height: 0,
-          borderBottomLeftRadius: "2rem",
-          borderBottomRightRadius: "2rem",
+          borderBottomLeftRadius: "1rem",
+          borderBottomRightRadius: "`1rem",
         }}
         className="absolute top-0 left-0 w-full bg-[#E5E7EB] z-10"
       />
