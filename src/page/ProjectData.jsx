@@ -4,7 +4,7 @@ export const projectData = [
   {
     title: "Dev Jobs",
     description:
-      "Interactive language application for learning the Igbo Language This is a mobile application that enables individuals to learn the Igbo Language Interactively, using images, audio pronunciations and quizzes",
+      "A job board platform designed specifically for developers and tech recruiters. This web application allows developers to search and apply for jobs based on their specific roles (e.g frontend, backend, full-stack, etc.)",
     tools: ["react", "tailwind", "framer"],
     github: "",
     liveLink: "",

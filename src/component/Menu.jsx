@@ -133,15 +133,22 @@ const Menu = ({ closeMenu }) => {
         initial="closed"
         animate="open"
         exit="exit"
-        className="absolute right-0 top-50 px-2 text-base font-bold z-20"
+        className="absolute right-0 top-50 px-2 text-base font-bold z-20 xl:right-40"
+        // a little bug over here
       >
-        <motion.li variants={itemVariants}>
+        <motion.li
+          variants={itemVariants}
+          className="hover:text-[#8e4aec] hover:scale-95  ease-in-out"
+        >
           <MotionLink to="/about" className="block" onClick={closeMenu}>
             About
           </MotionLink>
         </motion.li>
 
-        <motion.li variants={itemVariants}>
+        <motion.li
+          variants={itemVariants}
+          className="hover:text-[#8e4aec] hover:scale-95 ease-in-out"
+        >
           <MotionLink
             to="/portfolio"
             className="block my-5"
@@ -151,7 +158,10 @@ const Menu = ({ closeMenu }) => {
           </MotionLink>
         </motion.li>
 
-        <motion.li variants={itemVariants}>
+        <motion.li
+          variants={itemVariants}
+          className="hover:text-[#8e4aec] hover:scale-95  ease-in-out"
+        >
           <MotionLink to="/blogs" className="block" onClick={closeMenu}>
             Blogs
           </MotionLink>

@@ -3,14 +3,14 @@ import profileImage from "../assets/profile.jpeg";
 
 export default function AboutPage() {
   return (
-    <div className="mt-20 p-5">
-      <div>
+    <div className="mt-20 p-5 lg:flex items-center gap-5">
+      <div className="">
         <h1 className="mb-5 text-2xl font-medium">About Me</h1>
         <div className="relative overflow-hidden border-4 border-gray-300 rounded-lg">
           <img
             src={profileImage}
             alt="profile picture of samuel justus"
-            className="block w-full rounded-lg"
+            className="block w-full rounded-lg max-w-[900px]"
           />
         </div>
       </div>
