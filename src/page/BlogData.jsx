@@ -7,4 +7,16 @@ export const blogData = [
     time: "3 mins read",
     link: ''
   },
+  {
+    id: 0,
+    topic: "Array methods as explained to a 6-year-old",
+    time: "3 mins read",
+    link: ''
+  },
+  {
+    id: 0,
+    topic: "Array methods as explained to a 6-year-old",
+    time: "3 mins read",
+    link: ''
+  },
 ]
