@@ -47,7 +47,6 @@ const Menu = ({ closeMenu }) => {
 
     open: {
       transition: {
-        staggerChildren: 0.15,
         delayChildren: 0.2,
         staggerChildren: 0.1,
         staggerDirection: 1,
