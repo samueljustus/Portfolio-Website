@@ -43,7 +43,7 @@ export default function AboutPage() {
         <p className="text-sm/6 mb-5 text-[#374151]">
           If you’re looking for a developer who thinks like a builder and
           executes with speed, reach out here {" "}
-          <a href="" class="text-purple-600 underline">
+          <a href="https://www.linkedin.com/in/justus-samuel/" target="_blank" class="text-purple-600 underline">
             let’s talk
           </a>
           .
