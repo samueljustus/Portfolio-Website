@@ -17,7 +17,7 @@ export default function AboutPage() {
       <div>
         <h1 className="text-3xl font-bold my-5">Hi, i'm Samuel</h1>
         <p className="text-sm/6 mb-5 text-[#374151]">
-          My name is Justus samuel and I’m a software Developer who loves
+          My name is samuel justus and I’m a software Developer who loves
           turning ideas into polished, user-focused products
         </p>
         <p className="text-sm/6 mb-5 text-[#374151]">

@@ -46,7 +46,7 @@ function HeroProfile() {
             {/* <span class="bg-gray-300 rounded-full px-7 py-4 w-20 h-20"></span> */}
           </p>
           <h1 className="text-[#8e4aec] my-2 font-bold text-4xl md:text-5xl mb-2 ">
-            Justus Samuel
+            Samuel Justus
           </h1>
           <p className="mb-4">
             i'm a Software Developer and a Technical Writer based in Lagos,
