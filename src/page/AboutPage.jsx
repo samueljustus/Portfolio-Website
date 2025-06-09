@@ -2,6 +2,13 @@ import React from "react";
 import profileImage from "../assets/profile.jpeg";
 
 export default function AboutPage() {
+
+
+
+ 
+
+
+
   return (
     <div className="mt-20 p-5 lg:flex items-center gap-5">
       <div className="">
