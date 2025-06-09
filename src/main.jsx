@@ -7,6 +7,7 @@ import BlogPage from './page/BlogPage.jsx'
 import Layout from './component/Layout.jsx'
 import NotFoundPage from './NotFoundPage.jsx'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
+// import './index.css';
 
 const router = createBrowserRouter([
   {
