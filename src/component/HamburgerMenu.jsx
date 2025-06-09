@@ -2,7 +2,7 @@ import { useState } from "react";
 import { RxHalf1, RxHamburgerMenu } from "react-icons/rx";
 import { IoMdClose } from "react-icons/io";
 import Menu from "./Menu";
-import { AnimatePresence, motion } from "motion/react";
+import { AnimatePresence, motion } from "framer-motion";
 
 function HamburgerMenu() {
   const [open, setOpen] = useState(false);

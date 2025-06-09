@@ -1,5 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import './App.css'
 import HomePage from './component/HomePage.jsx'
 import AboutPage from './page/AboutPage.jsx'
 import PortfolioPage from './page/PortfolioPage.jsx'

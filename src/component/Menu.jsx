@@ -1,6 +1,6 @@
 import Socials from "./Socials";
 import { Link } from "react-router-dom";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 const Menu = ({ closeMenu }) => {
   const MotionLink = motion(Link);
   const menuVariant = {

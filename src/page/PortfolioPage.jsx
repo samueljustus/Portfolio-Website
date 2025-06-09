@@ -2,7 +2,7 @@ import React from "react";
 import { projectData } from "./ProjectData";
 import { FaLinkedin, FaMedium, FaGithub } from "react-icons/fa";
 import { CiLink } from "react-icons/ci";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 // import screenshot from  '../assets/Screenshot .png'
 export default function PortfolioPage() {
   return (

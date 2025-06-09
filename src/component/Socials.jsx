@@ -1,6 +1,6 @@
 import { FaLinkedin, FaMedium, FaGithub } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
-import { motion, MotionConfig } from "motion/react";
+import { motion, MotionConfig } from "framer-motion";
 function Socials({}) {
 
   const fadeIn = {

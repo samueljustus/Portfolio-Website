@@ -1,6 +1,6 @@
 import Socials from "./Socials";
 import profileImage from "../assets/profile.jpeg";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 
 function HeroProfile() {
   const container = {
